@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人主页 | 开发者名录</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            color: #f8fafc;
+            font-family: 'Inter', -apple-system, sans-serif;
+        }
+        .glass {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .gradient-text {
+            background: linear-gradient(90deg, #38bdf8, #818cf8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col items-center p-6 md:p-12">
+
+    <header class="w-full max-w-4xl flex flex-col items-center text-center mb-16">
+        <div class="w-24 h-24 bg-gradient-to-tr from-sky-400 to-indigo-500 rounded-full mb-6 flex items-center justify-center text-4xl shadow-lg">
+            🚀
+        </div>
+        <h1 class="text-4xl md:text-5xl font-bold mb-4">你好，我是 <span class="gradient-text">wRain</span></h1>
+        <p class="text-slate-400 max-w-lg text-lg">
+            计算机科学专业学生 / 技术宅 / 开源爱好者
+        </p>
+        <div class="flex space-x-4 mt-6">
+            <a href="#" class="text-2xl hover:text-sky-400 transition-colors"><i class="fab fa-github"></i></a>
+            <a href="#" class="text-2xl hover:text-sky-400 transition-colors"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="text-2xl hover:text-sky-400 transition-colors"><i class="fas fa-envelope"></i></a>
+        </div>
+    </header>
+
+    <main class="w-full max-w-4xl grid grid-cols-1 md:grid-cols-2 gap-6">
+        
+        <section class="glass p-8 rounded-3xl col-span-1 md:col-span-2">
+            <h2 class="text-2xl font-bold mb-4 flex items-center">
+                <i class="fas fa-user-circle mr-3 text-sky-400"></i> 关于我
+            </h2>
+            <p class="text-slate-300 leading-relaxed">
+                我是一名对算法、系统架构和网络技术充满好奇的 CS 学生。
+                平时喜欢钻研 C++/Python，维护自己的 Linux 服务器，偶尔也会在 Minecraft 的技术服里研究红石或插件。
+                我相信代码不仅是逻辑，更是解决现实问题的艺术。
+            </p>
+        </section>
+
+        <section class="glass p-8 rounded-3xl card-hover">
+            <h2 class="text-xl font-bold mb-6 flex items-center">
+                <i class="fas fa-code mr-3 text-indigo-400"></i> 技术栈
+            </h2>
+            <div class="flex flex-wrap gap-3">
+                <span class="px-3 py-1 bg-slate-800 rounded-full text-sm border border-slate-700">C/C++</span>
+                <span class="px-3 py-1 bg-slate-800 rounded-full text-sm border border-slate-700">Python</span>
+                <span class="px-3 py-1 bg-slate-800 rounded-full text-sm border border-slate-700">Java</span>
+                <span class="px-3 py-1 bg-slate-800 rounded-full text-sm border border-slate-700">Docker</span>
+                <span class="px-3 py-1 bg-slate-800 rounded-full text-sm border border-slate-700">Linux</span>
+                <span class="px-3 py-1 bg-slate-800 rounded-full text-sm border border-slate-700">Git</span>
+            </div>
+        </section>
+
+        <section class="glass p-8 rounded-3xl card-hover">
+            <h2 class="text-xl font-bold mb-6 flex items-center">
+                <i class="fas fa-gamepad mr-3 text-pink-400"></i> 兴趣爱好
+            </h2>
+            <ul class="text-slate-300 space-y-2">
+                <li>🎮 技术向 Minecraft</li>
+                <li>🎵 音游 (Arcaea)</li>
+                <li>🌍 学习日语 / 翻译</li>
+                <li>📝 知识管理 (Obsidian)</li>
+            </ul>
+        </section>
+
+    </main>
+
+    <footer class="mt-20 text-slate-500 text-sm">
+        <p>&copy; 2026 Powered by GitHub Pages</p>
+    </footer>
+
+</body>
+</html>
